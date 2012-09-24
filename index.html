@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Silverlight-imagebutton : A simple imagebutton control for Silverlight 5 applications" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Silverlight-imagebutton</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gfyans/Silverlight-Imagebutton">View on GitHub</a>
+
+          <h1 id="project_title">Silverlight-imagebutton</h1>
+          <h2 id="project_tagline">A simple imagebutton control for Silverlight 5 applications</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/gfyans/Silverlight-Imagebutton/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/gfyans/Silverlight-Imagebutton/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Silverlight-Imagebutton</h1>
+
+<p>I was a little taken aback by how complicated simple things could be in Silverlight. One of these <em>things</em> was a simple image button that changes image when you press it.</p>
+
+<p>So, here is my implementation - A simple imagebutton control for Silverlight 5 applications</p>
+
+<p>The solution is in VS2012 format, but you could easily take the components and re-build it in any version, it's simple enough.</p>
+
+<p>Note: This worked for me, you may have to make some changes. If you make improvements, just let me know :)</p>
+
+<h1>Components</h1>
+
+<p><em>Controls/ImageButton.cs</em>
+The main control code, this is what you add to your XAML templates.</p>
+
+<p><em>Themes/Generic.xaml</em>
+Every custom control must have a default template and this is where it has to live.</p>
+
+<p><em>Resources/Image.resx</em>
+I normally store all my SL assets in resource files, this is a sample resource file with a couple of graphics - one for an on state button, one for an off. The images are also included in the Resources/Images folder.</p>
+
+<h1>Usage</h1>
+
+<p>Once all the components are in place you can use it like so:</p>
+
+<p>Add your namespace to your XAML header:</p>
+
+<pre><code>xmlns:Controls="clr-namespace:SilverlightImageButton.Controls"
+</code></pre>
+
+<p>Add the control to your UI:</p>
+
+<pre><code>&lt;Controls:ImageButton x:Name="MyButton" /&gt;
+</code></pre>
+
+<p>And in the code behind you set the Off and On images like so:</p>
+
+<pre><code>MyButton.OffImageSource = SilverlightImageButton.Resources.Images.LangEn_off;
+MyButton.OnImageSource = SilverlightImageButton.Resources.Images.LangEn_on;
+</code></pre>
+
+<p>If anyone can figure out how to set these properties from the .XAML, I'd be happy to hear from you :)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Silverlight-imagebutton maintained by <a href="https://github.com/gfyans">gfyans</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
