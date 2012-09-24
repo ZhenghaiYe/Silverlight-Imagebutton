@@ -1,9 +1,7 @@
 Silverlight-Imagebutton
 =======================
 
-I was a little taken aback by how complicated simple things could be in Silverlight. One of these _things_ was a simple image button that changes image when you press it.
-
-So, here is my implementation - A simple imagebutton control for Silverlight 5 applications
+A simple imagebutton control for Silverlight 5 applications
 
 The solution is in VS2012 format, but you could easily take the components and re-build it in any version, it's simple enough.
 
