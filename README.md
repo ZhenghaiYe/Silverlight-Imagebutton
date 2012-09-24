@@ -1,7 +1,7 @@
 Silverlight-Imagebutton
 =======================
 
-I was a little taken aback by how difficult simple things could be in Silverlight. One of these was a simple image button that changes image when you press it.
+I was a little taken aback by how complicated simple things could be in Silverlight. One of these _things_ was a simple image button that changes image when you press it.
 
 So, here is my implementation - A simple imagebutton control for Silverlight 5 applications
 
@@ -15,7 +15,7 @@ Components
 _Controls/ImageButton.cs_
 The main control code, this is what you add to your XAML templates.
 
-_Themes/Generic.xaml-
+_Themes/Generic.xaml_
 Every custom control must have a default template and this is where it has to live.
 
 _Resources/Image.resx_
